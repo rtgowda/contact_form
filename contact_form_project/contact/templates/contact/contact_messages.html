@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Messages</title>
+</head>
+<body>
+    <h2>Submitted Messages</h2>
+    <ul>
+        {% for message in messages %}
+            <li><strong>{{ message.name }}</strong> ({{ message.email }}) - {{ message.message }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
